@@ -1,6 +1,19 @@
 <html>
-    p><h2>DO YOU...<a href="/Give the Iced Tea to dinosaur?.html">Give the Iced Tea to dinosaur?</a> OR <a href="/run away.html">Run away</a> </h2></p>
-
-
-
+    <P><img src= "https://www.yomiuri.co.jp/media/2022/07/20220711-OYT1I50140-1.jpg?type=large" hright="auto" width="300"></P>
+    <h2>The dinosaur asks you a question:</h2>
+    <P>What is the first color of the rainbow?</P>
+    <p><input tyoe="text" id="answer" value="tupe answer here"></p>
+    <p><button onclick="checkAnswer()">check Answer</button></p>
+    <script>
+        function checkAnswer() {
+            var answer =document.getElementById("answer").value
+            if (answer==="red") {
+                alert("correct answer")
+                window.location.href="/dinosaur2.html"
+        } else{
+            alert("WRONG! GO BACK TO SCHOOL")
+            window.location.href="/dinosaureat.html"
+        }
+    }
+    </script> 
 </html>
