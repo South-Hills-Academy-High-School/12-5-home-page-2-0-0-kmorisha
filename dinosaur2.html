@@ -1,3 +1,18 @@
 <html>
 <h1>The dinosaur asks you a  secound question</h1>
+<p>Where is the capital city of japan?</p>
+<p><input tyoe="text" id="answer" value="tupe answer here"></p>
+    <p><button onclick="checkAnswer()">check Answer</button></p>
+<script>
+    function checkAnswer() {
+        var answer =document.getElementById("answer").value
+        if (answer==="tokyo") {
+            alert("correct answer")
+            window.location.href="/dinosaur3.html"
+    } else{
+        alert("WRONG! GO BACK TO SCHOOL")
+        window.location.href="/dinosaureat.html"
+    }
+}
+</script> 
 </html>

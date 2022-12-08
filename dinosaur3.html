@@ -1,3 +1,18 @@
 <html>
 <h1>The dinosaur asks you a third question</h1>
+<p>What is John favorite food?</p>
+<p><input tyoe="text" id="answer" value="tupe answer here"></p>
+    <p><button onclick="checkAnswer()">check Answer</button></p>
+<script>
+    function checkAnswer() {
+        var answer =document.getElementById("answer").value
+        if (answer==="hamburger") {
+            alert("correct answer")
+            window.location.href="/dinosaur4.html"
+    } else{
+        alert("WRONG! GO BACK TO SCHOOL")
+        window.location.href="/dinosaureat.html"
+    }
+}
+</script> 
 </html>
